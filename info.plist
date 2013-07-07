@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>harryxu-drupal</string>
+	<key>connections</key>
+	<dict>
+		<key>E7086219-8DB4-4986-975E-C3CA981EC1F2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>159E1ECC-AC84-4F66-BA24-C07E2A3B7891</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>harryxu</string>
+	<key>description</key>
+	<string></string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Drupal</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>ds</string>
+				<key>runningsubtext</key>
+				<string>Loading…</string>
+				<key>script</key>
+				<string>require 'drupal.php';
+
+query('{query}');</string>
+				<key>subtext</key>
+				<string>Search Drupal7 API with Suggestions</string>
+				<key>title</key>
+				<string>Search Drupal7 API</string>
+				<key>type</key>
+				<integer>1</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>E7086219-8DB4-4986-975E-C3CA981EC1F2</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>plusspaces</key>
+				<false/>
+				<key>url</key>
+				<string>https://api.drupal.org/api/drupal/7/search/{query}</string>
+				<key>utf8</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>159E1ECC-AC84-4F66-BA24-C07E2A3B7891</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>ds: Search for Drupal Seven api.
+de: Search for Drupal Eight api.</string>
+	<key>uidata</key>
+	<dict>
+		<key>159E1ECC-AC84-4F66-BA24-C07E2A3B7891</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>E7086219-8DB4-4986-975E-C3CA981EC1F2</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string></string>
+</dict>
+</plist>
