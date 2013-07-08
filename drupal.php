@@ -12,7 +12,7 @@ function query($orig)
     $results = array();
     foreach ($items as $key => $value) {
         $results[] = array(
-            'uid' => 'key',
+            'uid' => $key,
             'arg' => $value,
             'title' => $value,
             //'subtitle' => 'Some item subtitle',
